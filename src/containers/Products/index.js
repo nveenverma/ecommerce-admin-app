@@ -7,7 +7,6 @@ import Layout from "../../components/Layout";
 import Modal from "../../components/UI/Modal";
 import Input from "../../components/UI/Input";
 import "./style.css";
-import { generatePublicUrl } from "../../urlConfig";
 
 function Products() {
 	
@@ -251,9 +250,7 @@ function Products() {
 												style={{ marginRight: "10px" }}
 											>
 												<img
-													src={generatePublicUrl(
-														picture.img
-													)}
+													src={picture.img}
 													alt={productDetails.name}
 												/>
 											</div>
